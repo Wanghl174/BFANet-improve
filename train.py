@@ -422,7 +422,7 @@ def SingleCard_training(gpu, cfgs):
 
 if __name__ == '__main__':
 
-    os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
+    os.environ['CUDA_VISIBLE_DEVICES'] = "0,1"
     cfg = get_parser()
     # # fix seed for debug
     random.seed(cfg.manual_seed)
