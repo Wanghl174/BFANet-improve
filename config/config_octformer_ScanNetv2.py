@@ -32,8 +32,8 @@ def get_parser():
                         help='stability epsilon for soft boundary targets')
     parser.add_argument('--boundary_chunk_size', type=int, default=2048,
                         help='query chunk size used by the KNN distance computation')
-    parser.add_argument('--crop_p', type=int, default=120000, help='point of scene for crop')
-    parser.add_argument('--batch_size', type=int, default=4, help='batch_size for single GPU')
+    parser.add_argument('--crop_p', type=int, default=80000, help='point of scene for crop')
+    parser.add_argument('--batch_size', type=int, default=2, help='batch_size for single GPU')
     parser.add_argument('--batch_size_v', type=int, default=1, help='batch_size for single GPU (validation)')
     parser.add_argument('--mixup', type=bool, default=True, help='mix up scene for data aug')
 
@@ -54,7 +54,7 @@ def get_parser():
     parser.add_argument('--local_rank', type=int, default=0, help='local rank for distributed training')
     parser.add_argument('-nr', '--node_rank', type=int, default=0, help='ranking within the nodes')
     parser.add_argument('--nodes', type=int, default=1, help='Number of distributed training nodes')
-    parser.add_argument('--gpu_per_node', type=int, default=4, help='Number of GPUs per node')
+    parser.add_argument('--gpu_per_node', type=int, default=2, help='Number of GPUs per node')
     parser.add_argument('--sync_bn', type=bool, default=True, help='Whether to batch norm all gpu para')
     parser.add_argument('--tcp_port', type=int, default=12222, help='tcp port for Distributed training')
 
