@@ -1,0 +1,7 @@
+setup.py
+BFANet_lib.egg-info/PKG-INFO
+BFANet_lib.egg-info/SOURCES.txt
+BFANet_lib.egg-info/dependency_links.txt
+BFANet_lib.egg-info/top_level.txt
+src/bfanet_lib_api.cpp
+src/cuda.cu
